@@ -188,7 +188,7 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
-/* --- DARK MODE STYLES --- */
+/* DARK MODE */
 body.dark {
     background-color: #1f1f1f;
     color: #f0f0f0;
