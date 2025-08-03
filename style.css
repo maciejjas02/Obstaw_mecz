@@ -38,9 +38,11 @@ h1 {
 a {
     color: #2980b9;
     text-decoration: none;
+    transition: color 0.2s ease-in-out;
 }
 
 a:hover {
+    color: #1c598f;
     text-decoration: underline;
 }
 
@@ -51,6 +53,9 @@ a:hover {
     gap: 30px;
     padding: 20px;
     flex: 1;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 /* Sidebar */
@@ -59,7 +64,7 @@ a:hover {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
     height: fit-content;
     max-height: 85vh;
     overflow-y: auto;
@@ -67,13 +72,27 @@ a:hover {
     top: 100px;
 }
 
+.sidebar h2 {
+    font-size: 1.3rem;
+}
+
+.sidebar h3 {
+    font-size: 1.05rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
 /* Główna zawartość */
 .main-content {
     flex: 1;
-    padding: 20px;
+    padding: 30px 20px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Listy */
@@ -83,7 +102,24 @@ ul {
     margin-bottom: 1rem;
 }
 
-h2, h3 {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .sidebar {
+        position: relative;
+        max-height: none;
+        box-shadow: none;
+    }
+
+    .main-content {
+        padding: 20px 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
 }
