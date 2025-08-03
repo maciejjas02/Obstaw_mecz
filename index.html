@@ -5,68 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analiza Meczów</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #f0f2f5;
+            color: #2c3e50;
+        }
+
+        .sidebar {
+            width: 280px;
+            background-color: #ffffff;
+            padding: 20px;
+            overflow-y: auto;
+            border-right: 1px solid #ccc;
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            width: 60px;
+            margin: 20px auto;
+        }
+
+        .footer {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 40px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <aside class="sidebar">
-            <h2>🌐 Eksperci – linki do analiz</h2>
+    <div class="sidebar">
+        <h2>🌐 Eksperci – linki do analiz</h2>
 
-            <h3>🇵🇱 Polska</h3>
-            <ul>
-                <li><a href="eksperci/flashscore.html">Flashscore</a></li>
-            </ul>
+        <h3>🇵🇱 Polska</h3>
+        <ul>
+            <li><a href="eksperci/flashscore.html">Flashscore</a></li>
+        </ul>
 
-            <h3>🇫🇷 Francja</h3>
-            <ul>
-                <li><a href="eksperci/pronosoft.html">Pronosoft</a></li>
-            </ul>
+        <h3>🇫🇷 Francja</h3>
+        <ul>
+            <li><a href="eksperci/pronosoft.html">Pronosoft</a></li>
+        </ul>
 
-            <h3>🇬🇧 Wielka Brytania</h3>
-            <ul>
-                <li><a href="eksperci/bettingexpert.html">BettingExpert</a></li>
-                <li><a href="eksperci/olbg.html">OLBG</a></li>
-                <li><a href="eksperci/footyaccumulators.html">Footy Accumulators</a></li>
-                <li><a href="eksperci/freesupertips.html">Free Super Tips</a></li>
-            </ul>
+        <h3>🇬🇧 Wielka Brytania</h3>
+        <ul>
+            <li><a href="eksperci/bettingexpert.html">BettingExpert</a></li>
+            <li><a href="eksperci/olbg.html">OLBG</a></li>
+            <li><a href="eksperci/footyaccumulators.html">Footy Accumulators</a></li>
+            <li><a href="eksperci/freesupertips.html">Free Super Tips</a></li>
+        </ul>
 
-            <h3>🇪🇸 Hiszpania</h3>
-            <ul>
-                <li><a href="eksperci/sportium.html">Sportium</a></li>
-            </ul>
+        <h3>🇪🇸 Hiszpania</h3>
+        <ul>
+            <li><a href="eksperci/sportium.html">Sportium</a></li>
+        </ul>
 
-            <h3>🇧🇷 Brazylia</h3>
-            <ul>
-                <li><a href="eksperci/aposta10.html">Aposta10</a></li>
-            </ul>
+        <h3>🇧🇷 Brazylia</h3>
+        <ul>
+            <li><a href="eksperci/aposta10.html">Aposta10</a></li>
+        </ul>
 
-            <h3>🇺🇸 USA</h3>
-            <ul>
-                <li><a href="eksperci/covers.html">Covers</a></li>
-                <li><a href="eksperci/bettingpros.html">BettingPros</a></li>
-                <li><a href="eksperci/dimers.html">Dimers</a></li>
-                <li><a href="eksperci/pickswise.html">Pickswise</a></li>
-            </ul>
+        <h3>🇺🇸 USA</h3>
+        <ul>
+            <li><a href="eksperci/covers.html">Covers</a></li>
+            <li><a href="eksperci/bettingpros.html">BettingPros</a></li>
+            <li><a href="eksperci/dimers.html">Dimers</a></li>
+            <li><a href="eksperci/pickswise.html">Pickswise</a></li>
+        </ul>
 
-            <h3>🌍 Globalne</h3>
-            <ul>
-                <li><a href="eksperci/soccervista.html">SoccerVista</a></li>
-                <li><a href="eksperci/windrawwin.html">WinDrawWin</a></li>
-                <li><a href="eksperci/tipstrr.html">Tipstrr</a></li>
-                <li><a href="eksperci/protipster.html">ProTipster</a></li>
-                <li><a href="eksperci/soccervital.html">SoccerVital</a></li>
-                <li><a href="eksperci/predictz.html">PredictZ</a></li>
-                <li><a href="eksperci/betshoot.html">Betshoot</a></li>
-            </ul>
-        </aside>
+        <h3>🌍 Globalne</h3>
+        <ul>
+            <li><a href="eksperci/soccervista.html">SoccerVista</a></li>
+            <li><a href="eksperci/windrawwin.html">WinDrawWin</a></li>
+            <li><a href="eksperci/tipstrr.html">Tipstrr</a></li>
+            <li><a href="eksperci/protipster.html">ProTipster</a></li>
+            <li><a href="eksperci/soccervital.html">SoccerVital</a></li>
+            <li><a href="eksperci/predictz.html">PredictZ</a></li>
+            <li><a href="eksperci/betshoot.html">Betshoot</a></li>
+        </ul>
+    </div>
 
-        <main class="main-content">
-            <div class="header">
-                <img src="logo.png" alt="Logo strony" class="logo">
-                <h1>Strona do analizy meczów piłkarskich</h1>
-            </div>
-
-            <p>Wybierz eksperta z listy po lewej stronie, aby przejść do jego panelu.</p>
-        </main>
+    <div class="main">
+        <img src="logo.png" alt="Logo strony" class="logo">
+        <h1>Strona do analizy meczów piłkarskich</h1>
+        <div class="footer">Wybierz eksperta z listy po lewej stronie, aby przejść do jego panelu.</div>
     </div>
 </body>
 </html>
