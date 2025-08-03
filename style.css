@@ -189,22 +189,18 @@ input:checked + .slider:before {
 }
 
 /* DARK MODE */
-body.dark {
-    background-color: #1f1f1f;
-    color: #f0f0f0;
+.theme-toggle {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    background-color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    font-size: 0.9rem;
+    z-index: 1000;
 }
-
-body.dark .sidebar,
-body.dark .main-content,
-body.dark .header {
+body.dark .theme-toggle {
     background-color: #2a2a2a;
     color: #f0f0f0;
-}
-
-body.dark a {
-    color: #8ecbff;
-}
-
-body.dark a:hover {
-    color: #a7ddff;
 }
