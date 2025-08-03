@@ -22,3 +22,9 @@ a:hover {
 ul {
     list-style-type: square;
 }
+.logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
