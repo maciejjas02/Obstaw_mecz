@@ -28,3 +28,14 @@ ul {
     display: block;
     margin: 30px auto 20px auto; /* góra auto dół */
 }
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
