@@ -23,8 +23,8 @@ ul {
     list-style-type: square;
 }
 .logo {
-    width: 10px;
+    width: 120px;
     height: auto;
     display: block;
-    margin-bottom: 20px;
+    margin: 30px auto 20px auto; /* góra auto dół */
 }
